@@ -40,3 +40,16 @@ public ResultInfo GetDepartments(string companyId, string id)
 ```
 
 But this is still not perfect solution,you will need different routeConfig to get defferent methods.
+
+The clean REST style soultion should use :
+```markdown
+api/Departments/12?companyId=1
+```
+In DepartmentssController :
+```markdown
+// api/Departments/12?companyId=1
+public ResultInfo Get(string id,string companyId)
+{
+  //Get GetDepartments for the companyId
+}
+```
