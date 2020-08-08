@@ -45,7 +45,7 @@ The clean REST style soultion should use :
 ```markdown
 api/Departments/12?companyId=1
 ```
-In DepartmentssController :
+In DepartmentsController :
 ```markdown
 // api/Departments/12?companyId=1
 public ResultInfo Get(string id,string companyId)
