@@ -1,6 +1,6 @@
 ## C# MVC How to register nest resource in REST API 
 
-  some people don't want to use {action} in Web AP,because they carry out this REST style with perseverance.
+  Some people don't want to use {action} in Web AP,because they carry out this REST style with perseverance.
 so there are some  some ways to achieve.
 
 In WebApiConfig :
