@@ -27,12 +27,14 @@ In WebApiConfig :
 In CompaniesController :
 ```markdown
 // api/Companies/1
+[HttpGet]
 public ResultInfo Get(string id)
 {
   //Get company info
 }
 
 // api/Companies/1/departments/12
+[HttpGet]
 public ResultInfo GetDepartments(string companyId, string id)
 {
   //Get GetDepartments for the companyId
@@ -48,6 +50,7 @@ api/Departments/12?companyId=1
 In DepartmentsController :
 ```markdown
 // api/Departments/12?companyId=1
+[HttpGet]
 public ResultInfo Get(string id,string companyId)
 {
   //Get GetDepartments for the companyId
